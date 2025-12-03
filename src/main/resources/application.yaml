@@ -27,7 +27,8 @@ spring:
   application:
     name: catalog
   config:
-    import: optional:configserver:http://localhost:8888
+    import: configserver:${CONFIG_SERVER_URI:http://config.e-jago.com}
+  #import: optional:configserver:http://localhost:8888
 
 #  datasource:
 #    url: jdbc:mysql://localhost:3306/${CATALOG_DB_NAME:catalog}
