@@ -1,0 +1,66 @@
+#spring:
+#  application:
+#    name: catalog
+#  product:
+#    datasource:
+#      url: jdbc:mysql://localhost:3306/${CATALOG_DB_NAME:catalog}
+#      username: ${CATALOG_DB_USER:root}
+#      password: ${CATALOG_DB_PASSWORD:}
+#    jpa:
+#      hibernate:
+#      show-sql: false
+#    profiles:
+#      active: ${COMPUTER_TYPE:}
+#  config:
+#    import: optional:configserver:http://localhost:8888
+#
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
+#      fail-fast: true
+#      profile: default
+#server:
+#  port: 8080
+
+
+spring:
+  application:
+    name: catalog
+  config:
+    import: optional:configserver:http://localhost:8888
+
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/${CATALOG_DB_NAME:catalog}
+#    username: ${CATALOG_DB_USER:root}
+#    password: ${CATALOG_DB_PASSWORD:}
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: none
+#    show-sql: false
+#
+#  profiles:
+#    active: ${COMPUTER_TYPE:}
+
+
+
+  #cloud:
+    #config:
+      #uri: http://localhost:8888
+      #fail-fast: true
+      #profile: default
+
+server:
+  port: 8080
+
+jago:
+  mail:
+    server:
+      host: smtp.gmail.com
+      port: 587
+      username: COULIBALY Salia
+
+
+
+
