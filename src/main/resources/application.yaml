@@ -59,7 +59,7 @@ jago:
   mail:
     server:
       host: smtp.gmail.com
-      port: 587
+      port: 9333
       username: COULIBALY Salia
 
 
