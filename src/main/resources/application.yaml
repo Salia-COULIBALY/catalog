@@ -53,7 +53,7 @@ spring:
       #profile: default
 
 server:
-  port: 80
+  port: 8080
 
 jago:
   mail:
